@@ -5,12 +5,14 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vitest/config";
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 const srcDir = path.resolve(rootDir, "src");
 
 export default defineConfig({
   root: rootDir,
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), cloudflare()],
   resolve: {
     dedupe: ["react", "react-dom"],
     alias: {
