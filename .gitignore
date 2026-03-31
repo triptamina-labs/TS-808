@@ -1,0 +1,35 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+
+# Build / salidas
+dist/
+coverage/
+*.tsbuildinfo
+
+# Cache / tooling
+.vite/
+.eslintcache
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variables de entorno locales
+.env
+.env.*
+!.env.example
+
+# IDE / sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporales
+*.tmp
+*.swp
+*.swo
